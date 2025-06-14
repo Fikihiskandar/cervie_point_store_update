@@ -1,0 +1,88 @@
+:where([class^="ri-"])::before {
+  content: "\f3c2";
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-checkbox {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+}
+
+.custom-checkbox:hover input~.checkmark {
+  border-color: #2D5BFF;
+}
+
+.custom-checkbox input:checked~.checkmark {
+  background-color: #2D5BFF;
+  border-color: #2D5BFF;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked~.checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.login-container {
+  background-image: url('https://readdy.ai/api/search-image?query=modern%20office%20workspace%20with%20computer%2C%20stationery%2C%20and%20retail%20items%20like%20clothing%20and%20toys%2C%20bright%20and%20airy%20environment%20with%20blue%20and%20white%20color%20scheme%2C%20professional%20business%20setting&width=1200&height=800&seq=12345&orientation=landscape');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-form {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.9);
+}
